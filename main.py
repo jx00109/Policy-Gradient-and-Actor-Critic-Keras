@@ -14,6 +14,7 @@ def parse():
     parser.add_argument('--do_render', action='store_true', help='whether render environment')
     parser.add_argument('--save_summary_path', type=str, default = "pg_summary/", help='')
     parser.add_argument('--save_network_path', type=str, default = "saved_pg_networks/", help='')
+    parser.add_argument('--learning_rate', type=float, default=0.001, help='')
     try:
         from argument import add_arguments
         parser = add_arguments(parser)
